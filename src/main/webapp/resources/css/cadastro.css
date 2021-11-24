@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+a{
+    color:wheat ;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    background:#FF914D;
+    height: 8vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+   letter-spacing: 3px;
+   margin-left: 32px;
+
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+@media(max-width:999px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width:50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+.nav-list.active{
+    transform: translateX(0);
+}
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background: blue;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+
+#header {
+	background: #F8F8FF !important;
+	height: 10vh;
+	width: 100%;
+	margin: 0px;
+}
+
+#logo {
+	width: 200px;
+}
+
+.formulario {
+	margin: 145px;
+	background-color: white;
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-bottom: 150px;
+}
+
+#form {
+	width: 40%;
+	
+}
+
+#form table {
+	width: 100%;
+}
+
+#form table input {
+	border: 1px solid #CCC;
+	box-shadow: none;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#form button {
+	background: none;
+	border: 2px solid #ff8040;
+	border-radius: 50px;
+	color: #ff8040;
+	height: 50px;
+	width: 250px;
+	outline: none;
+}
+
+
+
+

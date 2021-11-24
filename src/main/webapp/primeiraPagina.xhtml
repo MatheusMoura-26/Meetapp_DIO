@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Primeira Pagina</title>
+</h:head>
+<h:body>
+	<h1>Primeira página JSF</h1>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputText value="nome" />
+			<h:inputText />
+
+			<h:outputText value="BTN" />
+			<h:commandButton value="Enviar" />
+
+			<h:outputText value="Password" />
+			<h:inputSecret />
+			
+			<h:outputText value="Checkbox" />
+			<h:selectManyCheckbox>
+			<f:selectItem itemLabel="java 8" itemValue="java8"/>
+			<f:selectItem itemLabel="Java 9"/>
+			</h:selectManyCheckbox>
+			
+			<h:outputText value="Combobox" />
+			<h:selectOneMenu>
+				<f:selectItem itemLabel="java 8" itemValue="java8"/>
+				<f:selectItem itemLabel="Java 9"/>			
+			</h:selectOneMenu>
+				
+			<h:selectOneRadio>
+				<f:selectItem itemLabel="java 8" itemValue="java8"/>
+				<f:selectItem itemLabel="Java 9"/>	
+			</h:selectOneRadio>
+			
+		 <h:inputTextarea/>
+
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
